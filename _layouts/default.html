@@ -22,7 +22,11 @@
     <div class="initial-content">
       {{ content }}
     </div>
-
+{% if site.search == true %}
+      <div class="search-content">
+        {% include search/search_form.html %}
+      </div>
+    {% endif %}
     
 
     <div class="page__footer">
